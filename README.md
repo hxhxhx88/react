@@ -9,6 +9,8 @@ go get -u {{.Out.ImportPath}}
 -->
 ## `react`
 
+> Forked from [myitcv.io](https://github.com/myitcv/x/tree/master/react).
+
 Package react is a set of GopherJS bindings for Facebook's React, a Javascript library for building user interfaces.
 
 ```
