@@ -433,6 +433,18 @@ func TestSupElem(t *testing.T) {
 		t.Fatal("Failed to find <sup> element")
 	}
 }
+func TestSvgElem(t *testing.T) {
+	class := "test"
+
+	x := testutils.Wrapper(react.Svg(&react.SvgProps{ClassName: class}))
+	cont := testutils.RenderIntoDocument(x)
+
+	el := testutils.FindRenderedDOMComponentWithClass(cont, class)
+
+	if _, ok := el.(*dom.BasicHTMLElement); !ok {
+		t.Fatal("Failed to find <svg> element")
+	}
+}
 func TestTableElem(t *testing.T) {
 	class := "test"
 
@@ -467,5 +479,17 @@ func TestUlElem(t *testing.T) {
 
 	if _, ok := el.(*dom.HTMLUListElement); !ok {
 		t.Fatal("Failed to find <ul> element")
+	}
+}
+func TestUseElem(t *testing.T) {
+	class := "test"
+
+	x := testutils.Wrapper(react.Use(&react.UseProps{ClassName: class}))
+	cont := testutils.RenderIntoDocument(x)
+
+	el := testutils.FindRenderedDOMComponentWithClass(cont, class)
+
+	if _, ok := el.(*dom.BasicHTMLElement); !ok {
+		t.Fatal("Failed to find <use> element")
 	}
 }

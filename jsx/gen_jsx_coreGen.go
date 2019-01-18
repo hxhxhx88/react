@@ -131,6 +131,9 @@ func parse(n *html.Node) react.Element {
 	case "sup":
 		return parseSup(n)
 
+	case "svg":
+		return parseSvg(n)
+
 	case "table":
 		return parseTable(n)
 
@@ -154,6 +157,9 @@ func parse(n *html.Node) react.Element {
 
 	case "ul":
 		return parseUl(n)
+
+	case "use":
+		return parseUse(n)
 
 	default:
 		panic(fmt.Errorf("cannot handle Element %v", n.Data))
@@ -2244,6 +2250,72 @@ func parseSup(n *html.Node) *react.SupElem {
 	return react.Sup(vp, kids...)
 
 }
+func parseSvg(n *html.Node) *react.SvgElem {
+
+	var kids []react.Element
+
+	var vp *react.SvgProps
+	var ds react.DataSet
+
+	if len(n.Attr) > 0 {
+		vp = new(react.SvgProps)
+
+		for _, a := range n.Attr {
+			switch v := a.Key; {
+
+			case v == "aria-expanded":
+				vp.AriaExpanded = parseBool(a.Val)
+
+			case v == "aria-haspopup":
+				vp.AriaHasPopup = parseBool(a.Val)
+
+			case v == "aria-labelledby":
+				vp.AriaLabelledBy = a.Val
+
+			case v == "class":
+				vp.ClassName = a.Val
+
+			case v == "id":
+				vp.ID = a.Val
+
+			case v == "key":
+				vp.Key = a.Val
+
+			case v == "preserveaspectratio":
+				vp.PreserveAspectRatio = a.Val
+
+			case v == "role":
+				vp.Role = a.Val
+
+			case v == "style":
+				vp.Style = parseCSS(a.Val)
+
+			case v == "viewbox":
+				vp.ViewBox = a.Val
+
+			case v == "xmlns":
+				vp.Xmlns = a.Val
+
+			case strings.HasPrefix(v, "data-"):
+				if ds == nil {
+					ds = make(react.DataSet)
+				}
+				ds[strings.TrimPrefix(v, "data-")] = a.Val
+			default:
+				panic(fmt.Errorf("don't know how to handle <svg> attribute %q", a.Key))
+			}
+		}
+
+		vp.DataSet = ds
+	}
+
+	for c := n.FirstChild; c != nil; c = c.NextSibling {
+		kids = append(kids, parse(c).(react.Element))
+	}
+
+	return react.Svg(vp, kids...)
+
+}
 func parseTable(n *html.Node) *react.TableElem {
 
 	var kids []react.Element
@@ -2704,5 +2776,65 @@ func parseUl(n *html.Node) *react.UlElem {
 	}
 
 	return react.Ul(vp, kids...)
+
+}
+func parseUse(n *html.Node) *react.UseElem {
+
+	var kids []react.Element
+
+	var vp *react.UseProps
+	var ds react.DataSet
+
+	if len(n.Attr) > 0 {
+		vp = new(react.UseProps)
+
+		for _, a := range n.Attr {
+			switch v := a.Key; {
+
+			case v == "aria-expanded":
+				vp.AriaExpanded = parseBool(a.Val)
+
+			case v == "aria-haspopup":
+				vp.AriaHasPopup = parseBool(a.Val)
+
+			case v == "aria-labelledby":
+				vp.AriaLabelledBy = a.Val
+
+			case v == "class":
+				vp.ClassName = a.Val
+
+			case v == "id":
+				vp.ID = a.Val
+
+			case v == "key":
+				vp.Key = a.Val
+
+			case v == "role":
+				vp.Role = a.Val
+
+			case v == "style":
+				vp.Style = parseCSS(a.Val)
+
+			case v == "xlinkhref":
+				vp.XlinkHref = a.Val
+
+			case strings.HasPrefix(v, "data-"):
+				if ds == nil {
+					ds = make(react.DataSet)
+				}
+				ds[strings.TrimPrefix(v, "data-")] = a.Val
+			default:
+				panic(fmt.Errorf("don't know how to handle <use> attribute %q", a.Key))
+			}
+		}
+
+		vp.DataSet = ds
+	}
+
+	for c := n.FirstChild; c != nil; c = c.NextSibling {
+		kids = append(kids, parse(c).(react.Element))
+	}
+
+	return react.Use(vp, kids...)
 
 }

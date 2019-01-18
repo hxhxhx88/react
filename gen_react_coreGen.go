@@ -3303,6 +3303,107 @@ func Sup(props *SupProps, children ...Element) *SupElem {
 	}
 }
 
+// SvgElem is the React element definition corresponding to the HTML <svg> element
+type SvgElem struct {
+	Element
+}
+
+func (a *SvgElem) coreReactElement() {}
+
+// SvgProps defines the properties for the <svg> element
+type SvgProps struct {
+	AriaExpanded            bool
+	AriaHasPopup            bool
+	AriaLabelledBy          string
+	ClassName               string
+	DangerouslySetInnerHTML *DangerousInnerHTML
+	DataSet                 DataSet
+	ID                      string
+	Key                     string
+	OnChange                OnChange
+	OnClick                 OnClick
+	PreserveAspectRatio     string
+	Ref                     Ref
+	Role                    string
+	Style                   *CSS
+	ViewBox                 string
+	Xmlns                   string
+}
+
+// Svg creates a new instance of a <svg> element with the provided props and
+// children
+func Svg(props *SvgProps, children ...Element) *SvgElem {
+	type _SvgProps struct {
+		o                       *js.Object
+		AriaExpanded            bool                `js:"aria-expanded"`
+		AriaHasPopup            bool                `js:"aria-haspopup"`
+		AriaLabelledBy          string              `js:"aria-labelledby"`
+		ClassName               string              `js:"className"`
+		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
+		ID                      string              `js:"id" react:"omitempty"`
+		Key                     string              `js:"key" react:"omitempty"`
+		OnChange                OnChange            `js:"onChange"`
+		OnClick                 OnClick             `js:"onClick"`
+		PreserveAspectRatio     string              `js:"preserveAspectRatio"`
+		Ref                     Ref                 `js:"ref"`
+		Role                    string              `js:"role"`
+		Style                   *CSS                `js:"style"`
+		ViewBox                 string              `js:"viewBox"`
+		Xmlns                   string              `js:"xmlns"`
+	}
+
+	rprops := &_SvgProps{
+		o: object.New(),
+	}
+
+	if props != nil {
+		rprops.AriaExpanded = props.AriaExpanded
+
+		rprops.AriaHasPopup = props.AriaHasPopup
+
+		rprops.AriaLabelledBy = props.AriaLabelledBy
+
+		rprops.ClassName = props.ClassName
+
+		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
+
+		if props.DataSet != nil {
+			for dk, dv := range props.DataSet {
+				rprops.o.Set("data-"+dk, dv)
+			}
+		}
+		if props.ID != "" {
+			rprops.ID = props.ID
+		}
+		if props.Key != "" {
+			rprops.Key = props.Key
+		}
+		if props.OnChange != nil {
+			rprops.o.Set("onChange", props.OnChange.OnChange)
+		}
+		if props.OnClick != nil {
+			rprops.o.Set("onClick", props.OnClick.OnClick)
+		}
+		rprops.PreserveAspectRatio = props.PreserveAspectRatio
+
+		if props.Ref != nil {
+			rprops.o.Set("ref", props.Ref.Ref)
+		}
+		rprops.Role = props.Role
+
+		// TODO: until we have a resolution on
+		// https://github.com/gopherjs/gopherjs/issues/236
+		rprops.Style = props.Style.hack()
+		rprops.ViewBox = props.ViewBox
+
+		rprops.Xmlns = props.Xmlns
+	}
+
+	return &SvgElem{
+		Element: createElement("svg", rprops, children...),
+	}
+}
+
 // TableElem is the React element definition corresponding to the HTML <table> element
 type TableElem struct {
 	Element
@@ -4032,5 +4133,98 @@ func Ul(props *UlProps, children ...RendersLi) *UlElem {
 
 	return &UlElem{
 		Element: createElement("ul", rprops, elems...),
+	}
+}
+
+// UseElem is the React element definition corresponding to the HTML <use> element
+type UseElem struct {
+	Element
+}
+
+func (a *UseElem) coreReactElement() {}
+
+// UseProps defines the properties for the <use> element
+type UseProps struct {
+	AriaExpanded            bool
+	AriaHasPopup            bool
+	AriaLabelledBy          string
+	ClassName               string
+	DangerouslySetInnerHTML *DangerousInnerHTML
+	DataSet                 DataSet
+	ID                      string
+	Key                     string
+	OnChange                OnChange
+	OnClick                 OnClick
+	Ref                     Ref
+	Role                    string
+	Style                   *CSS
+	XlinkHref               string
+}
+
+// Use creates a new instance of a <use> element with the provided props and
+// children
+func Use(props *UseProps, children ...Element) *UseElem {
+	type _UseProps struct {
+		o                       *js.Object
+		AriaExpanded            bool                `js:"aria-expanded"`
+		AriaHasPopup            bool                `js:"aria-haspopup"`
+		AriaLabelledBy          string              `js:"aria-labelledby"`
+		ClassName               string              `js:"className"`
+		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
+		ID                      string              `js:"id" react:"omitempty"`
+		Key                     string              `js:"key" react:"omitempty"`
+		OnChange                OnChange            `js:"onChange"`
+		OnClick                 OnClick             `js:"onClick"`
+		Ref                     Ref                 `js:"ref"`
+		Role                    string              `js:"role"`
+		Style                   *CSS                `js:"style"`
+		XlinkHref               string              `js:"xlinkHref"`
+	}
+
+	rprops := &_UseProps{
+		o: object.New(),
+	}
+
+	if props != nil {
+		rprops.AriaExpanded = props.AriaExpanded
+
+		rprops.AriaHasPopup = props.AriaHasPopup
+
+		rprops.AriaLabelledBy = props.AriaLabelledBy
+
+		rprops.ClassName = props.ClassName
+
+		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
+
+		if props.DataSet != nil {
+			for dk, dv := range props.DataSet {
+				rprops.o.Set("data-"+dk, dv)
+			}
+		}
+		if props.ID != "" {
+			rprops.ID = props.ID
+		}
+		if props.Key != "" {
+			rprops.Key = props.Key
+		}
+		if props.OnChange != nil {
+			rprops.o.Set("onChange", props.OnChange.OnChange)
+		}
+		if props.OnClick != nil {
+			rprops.o.Set("onClick", props.OnClick.OnClick)
+		}
+		if props.Ref != nil {
+			rprops.o.Set("ref", props.Ref.Ref)
+		}
+		rprops.Role = props.Role
+
+		// TODO: until we have a resolution on
+		// https://github.com/gopherjs/gopherjs/issues/236
+		rprops.Style = props.Style.hack()
+		rprops.XlinkHref = props.XlinkHref
+	}
+
+	return &UseElem{
+		Element: createElement("use", rprops, children...),
 	}
 }

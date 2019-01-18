@@ -315,6 +315,14 @@ var elements = map[string]*Elem{
 		Children: "*OptionElem",
 	},
 	"Span": &Elem{},
+	"Svg": &Elem{
+		Dom: "BasicHTMLElement",
+		Attributes: map[string]*Attr{
+			"Xmlns":               &Attr{},
+			"PreserveAspectRatio": &Attr{},
+			"ViewBox":             &Attr{},
+		},
+	},
 	"Strike": &Elem{
 		Dom:   "BasicHTMLElement",
 		React: "s",
@@ -353,5 +361,11 @@ var elements = map[string]*Elem{
 	"Ul": &Elem{
 		Dom:      "HTMLUListElement",
 		Children: "RendersLi",
+	},
+	"Use": &Elem{
+		Dom: "BasicHTMLElement",
+		Attributes: map[string]*Attr{
+			"XlinkHref": &Attr{},
+		},
 	},
 }
