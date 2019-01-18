@@ -1,1 +1,1 @@
-package preact //import "myitcv.io/react/internal/preact"
+package preact //import "github.com/hxhxhx88/react/internal/preact"

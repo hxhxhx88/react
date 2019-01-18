@@ -1,1 +1,1 @@
-package dev //import "myitcv.io/react/internal/dev"
+package dev //import "github.com/hxhxhx88/react/internal/dev"

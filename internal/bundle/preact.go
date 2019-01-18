@@ -2,4 +2,4 @@
 
 package bundle
 
-import _ "myitcv.io/react/internal/preact"
+import _ "github.com/hxhxhx88/react/internal/preact"

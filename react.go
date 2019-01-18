@@ -26,8 +26,8 @@ import (
 	// imported for the side effect of bundling react
 	// build tags control whether this actually includes
 	// js files or not
-	_ "myitcv.io/react/internal/bundle"
-	"myitcv.io/react/internal/core"
+	_ "github.com/hxhxhx88/react/internal/bundle"
+	"github.com/hxhxhx88/react/internal/core"
 )
 
 const (
