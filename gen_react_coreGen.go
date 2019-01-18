@@ -13,9 +13,6 @@ func (a *AElem) coreReactElement() {}
 
 // AProps defines the properties for the <a> element
 type AProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -36,9 +33,6 @@ type AProps struct {
 func A(props *AProps, children ...Element) *AElem {
 	type _AProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		Href                    string              `js:"href"`
@@ -58,12 +52,6 @@ func A(props *AProps, children ...Element) *AElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -114,9 +102,6 @@ func (a *AbbrElem) coreReactElement() {}
 
 // AbbrProps defines the properties for the <abbr> element
 type AbbrProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -134,9 +119,6 @@ type AbbrProps struct {
 func Abbr(props *AbbrProps, children ...Element) *AbbrElem {
 	type _AbbrProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -153,12 +135,6 @@ func Abbr(props *AbbrProps, children ...Element) *AbbrElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -204,9 +180,6 @@ func (a *ArticleElem) coreReactElement() {}
 
 // ArticleProps defines the properties for the <article> element
 type ArticleProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -224,9 +197,6 @@ type ArticleProps struct {
 func Article(props *ArticleProps, children ...Element) *ArticleElem {
 	type _ArticleProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -243,12 +213,6 @@ func Article(props *ArticleProps, children ...Element) *ArticleElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -294,9 +258,6 @@ func (a *AsideElem) coreReactElement() {}
 
 // AsideProps defines the properties for the <aside> element
 type AsideProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -314,9 +275,6 @@ type AsideProps struct {
 func Aside(props *AsideProps, children ...Element) *AsideElem {
 	type _AsideProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -333,12 +291,6 @@ func Aside(props *AsideProps, children ...Element) *AsideElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -384,9 +336,6 @@ func (a *BElem) coreReactElement() {}
 
 // BProps defines the properties for the <b> element
 type BProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -404,9 +353,6 @@ type BProps struct {
 func B(props *BProps, children ...Element) *BElem {
 	type _BProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -423,12 +369,6 @@ func B(props *BProps, children ...Element) *BElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -474,9 +414,6 @@ func (a *BrElem) coreReactElement() {}
 
 // BrProps defines the properties for the <br> element
 type BrProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -494,9 +431,6 @@ type BrProps struct {
 func Br(props *BrProps, children ...Element) *BrElem {
 	type _BrProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -513,12 +447,6 @@ func Br(props *BrProps, children ...Element) *BrElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -564,9 +492,6 @@ func (a *ButtonElem) coreReactElement() {}
 
 // ButtonProps defines the properties for the <button> element
 type ButtonProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -585,9 +510,6 @@ type ButtonProps struct {
 func Button(props *ButtonProps, children ...Element) *ButtonElem {
 	type _ButtonProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -605,12 +527,6 @@ func Button(props *ButtonProps, children ...Element) *ButtonElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -657,9 +573,6 @@ func (a *CaptionElem) coreReactElement() {}
 
 // CaptionProps defines the properties for the <caption> element
 type CaptionProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -677,9 +590,6 @@ type CaptionProps struct {
 func Caption(props *CaptionProps, children ...Element) *CaptionElem {
 	type _CaptionProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -696,12 +606,6 @@ func Caption(props *CaptionProps, children ...Element) *CaptionElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -747,9 +651,6 @@ func (a *CodeElem) coreReactElement() {}
 
 // CodeProps defines the properties for the <code> element
 type CodeProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -767,9 +668,6 @@ type CodeProps struct {
 func Code(props *CodeProps, children ...Element) *CodeElem {
 	type _CodeProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -786,12 +684,6 @@ func Code(props *CodeProps, children ...Element) *CodeElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -837,9 +729,6 @@ func (a *DivElem) coreReactElement() {}
 
 // DivProps defines the properties for the <div> element
 type DivProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -857,9 +746,6 @@ type DivProps struct {
 func Div(props *DivProps, children ...Element) *DivElem {
 	type _DivProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -876,12 +762,6 @@ func Div(props *DivProps, children ...Element) *DivElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -927,9 +807,6 @@ func (a *EmElem) coreReactElement() {}
 
 // EmProps defines the properties for the <em> element
 type EmProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -947,9 +824,6 @@ type EmProps struct {
 func Em(props *EmProps, children ...Element) *EmElem {
 	type _EmProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -966,12 +840,6 @@ func Em(props *EmProps, children ...Element) *EmElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1017,9 +885,6 @@ func (a *FooterElem) coreReactElement() {}
 
 // FooterProps defines the properties for the <footer> element
 type FooterProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1037,9 +902,6 @@ type FooterProps struct {
 func Footer(props *FooterProps, children ...Element) *FooterElem {
 	type _FooterProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1056,12 +918,6 @@ func Footer(props *FooterProps, children ...Element) *FooterElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1107,9 +963,6 @@ func (a *FormElem) coreReactElement() {}
 
 // FormProps defines the properties for the <form> element
 type FormProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1128,9 +981,6 @@ type FormProps struct {
 func Form(props *FormProps, children ...Element) *FormElem {
 	type _FormProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1148,12 +998,6 @@ func Form(props *FormProps, children ...Element) *FormElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1202,9 +1046,6 @@ func (a *H1Elem) coreReactElement() {}
 
 // H1Props defines the properties for the <h1> element
 type H1Props struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1222,9 +1063,6 @@ type H1Props struct {
 func H1(props *H1Props, children ...Element) *H1Elem {
 	type _H1Props struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1241,12 +1079,6 @@ func H1(props *H1Props, children ...Element) *H1Elem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1292,9 +1124,6 @@ func (a *H2Elem) coreReactElement() {}
 
 // H2Props defines the properties for the <h2> element
 type H2Props struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1312,9 +1141,6 @@ type H2Props struct {
 func H2(props *H2Props, children ...Element) *H2Elem {
 	type _H2Props struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1331,12 +1157,6 @@ func H2(props *H2Props, children ...Element) *H2Elem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1382,9 +1202,6 @@ func (a *H3Elem) coreReactElement() {}
 
 // H3Props defines the properties for the <h3> element
 type H3Props struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1402,9 +1219,6 @@ type H3Props struct {
 func H3(props *H3Props, children ...Element) *H3Elem {
 	type _H3Props struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1421,12 +1235,6 @@ func H3(props *H3Props, children ...Element) *H3Elem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1472,9 +1280,6 @@ func (a *H4Elem) coreReactElement() {}
 
 // H4Props defines the properties for the <h4> element
 type H4Props struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1492,9 +1297,6 @@ type H4Props struct {
 func H4(props *H4Props, children ...Element) *H4Elem {
 	type _H4Props struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1511,12 +1313,6 @@ func H4(props *H4Props, children ...Element) *H4Elem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1562,9 +1358,6 @@ func (a *H5Elem) coreReactElement() {}
 
 // H5Props defines the properties for the <h5> element
 type H5Props struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1582,9 +1375,6 @@ type H5Props struct {
 func H5(props *H5Props, children ...Element) *H5Elem {
 	type _H5Props struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1601,12 +1391,6 @@ func H5(props *H5Props, children ...Element) *H5Elem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1652,9 +1436,6 @@ func (a *H6Elem) coreReactElement() {}
 
 // H6Props defines the properties for the <h6> element
 type H6Props struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1672,9 +1453,6 @@ type H6Props struct {
 func H6(props *H6Props, children ...Element) *H6Elem {
 	type _H6Props struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1691,12 +1469,6 @@ func H6(props *H6Props, children ...Element) *H6Elem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1742,9 +1514,6 @@ func (a *HeaderElem) coreReactElement() {}
 
 // HeaderProps defines the properties for the <header> element
 type HeaderProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1762,9 +1531,6 @@ type HeaderProps struct {
 func Header(props *HeaderProps, children ...Element) *HeaderElem {
 	type _HeaderProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1781,12 +1547,6 @@ func Header(props *HeaderProps, children ...Element) *HeaderElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1832,9 +1592,6 @@ func (a *HrElem) coreReactElement() {}
 
 // HrProps defines the properties for the <hr> element
 type HrProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1852,9 +1609,6 @@ type HrProps struct {
 func Hr(props *HrProps) *HrElem {
 	type _HrProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1871,12 +1625,6 @@ func Hr(props *HrProps) *HrElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -1922,9 +1670,6 @@ func (a *IElem) coreReactElement() {}
 
 // IProps defines the properties for the <i> element
 type IProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -1942,9 +1687,6 @@ type IProps struct {
 func I(props *IProps, children ...Element) *IElem {
 	type _IProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -1961,12 +1703,6 @@ func I(props *IProps, children ...Element) *IElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2012,9 +1748,6 @@ func (a *IFrameElem) coreReactElement() {}
 
 // IFrameProps defines the properties for the <iframe> element
 type IFrameProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2033,9 +1766,6 @@ type IFrameProps struct {
 func IFrame(props *IFrameProps, children ...Element) *IFrameElem {
 	type _IFrameProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2053,12 +1783,6 @@ func IFrame(props *IFrameProps, children ...Element) *IFrameElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2107,9 +1831,6 @@ func (a *ImgElem) coreReactElement() {}
 // ImgProps defines the properties for the <img> element
 type ImgProps struct {
 	Alt                     string
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2129,9 +1850,6 @@ func Img(props *ImgProps, children ...Element) *ImgElem {
 	type _ImgProps struct {
 		o                       *js.Object
 		Alt                     string              `js:"alt"`
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2150,12 +1868,6 @@ func Img(props *ImgProps, children ...Element) *ImgElem {
 
 	if props != nil {
 		rprops.Alt = props.Alt
-
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
 
 		rprops.ClassName = props.ClassName
 
@@ -2204,9 +1916,6 @@ func (a *InputElem) coreReactElement() {}
 
 // InputProps defines the properties for the <input> element
 type InputProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2227,9 +1936,6 @@ type InputProps struct {
 func Input(props *InputProps, children ...Element) *InputElem {
 	type _InputProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2249,12 +1955,6 @@ func Input(props *InputProps, children ...Element) *InputElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2305,9 +2005,6 @@ func (a *LabelElem) coreReactElement() {}
 
 // LabelProps defines the properties for the <label> element
 type LabelProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2326,9 +2023,6 @@ type LabelProps struct {
 func Label(props *LabelProps, children ...Element) *LabelElem {
 	type _LabelProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		For                     string              `js:"htmlFor"`
@@ -2346,12 +2040,6 @@ func Label(props *LabelProps, children ...Element) *LabelElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2401,9 +2089,6 @@ func (l *LiElem) RendersLi(*LiElem) {}
 
 // LiProps defines the properties for the <li> element
 type LiProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2421,9 +2106,6 @@ type LiProps struct {
 func Li(props *LiProps, children ...Element) *LiElem {
 	type _LiProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2440,12 +2122,6 @@ func Li(props *LiProps, children ...Element) *LiElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2491,9 +2167,6 @@ func (a *MainElem) coreReactElement() {}
 
 // MainProps defines the properties for the <main> element
 type MainProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2511,9 +2184,6 @@ type MainProps struct {
 func Main(props *MainProps, children ...Element) *MainElem {
 	type _MainProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2530,12 +2200,6 @@ func Main(props *MainProps, children ...Element) *MainElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2581,9 +2245,6 @@ func (a *NavElem) coreReactElement() {}
 
 // NavProps defines the properties for the <nav> element
 type NavProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2601,9 +2262,6 @@ type NavProps struct {
 func Nav(props *NavProps, children ...Element) *NavElem {
 	type _NavProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2620,12 +2278,6 @@ func Nav(props *NavProps, children ...Element) *NavElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2671,9 +2323,6 @@ func (a *OptionElem) coreReactElement() {}
 
 // OptionProps defines the properties for the <option> element
 type OptionProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2692,9 +2341,6 @@ type OptionProps struct {
 func Option(props *OptionProps, children ...Element) *OptionElem {
 	type _OptionProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2712,12 +2358,6 @@ func Option(props *OptionProps, children ...Element) *OptionElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2764,9 +2404,6 @@ func (a *PElem) coreReactElement() {}
 
 // PProps defines the properties for the <p> element
 type PProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2784,9 +2421,6 @@ type PProps struct {
 func P(props *PProps, children ...Element) *PElem {
 	type _PProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2803,12 +2437,6 @@ func P(props *PProps, children ...Element) *PElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2854,9 +2482,6 @@ func (a *PreElem) coreReactElement() {}
 
 // PreProps defines the properties for the <pre> element
 type PreProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2874,9 +2499,6 @@ type PreProps struct {
 func Pre(props *PreProps, children ...Element) *PreElem {
 	type _PreProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2893,12 +2515,6 @@ func Pre(props *PreProps, children ...Element) *PreElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -2944,9 +2560,6 @@ func (a *SelectElem) coreReactElement() {}
 
 // SelectProps defines the properties for the <select> element
 type SelectProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -2965,9 +2578,6 @@ type SelectProps struct {
 func Select(props *SelectProps, children ...*OptionElem) *SelectElem {
 	type _SelectProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -2990,12 +2600,6 @@ func Select(props *SelectProps, children ...*OptionElem) *SelectElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3042,9 +2646,6 @@ func (a *SpanElem) coreReactElement() {}
 
 // SpanProps defines the properties for the <span> element
 type SpanProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3062,9 +2663,6 @@ type SpanProps struct {
 func Span(props *SpanProps, children ...Element) *SpanElem {
 	type _SpanProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3081,12 +2679,6 @@ func Span(props *SpanProps, children ...Element) *SpanElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3132,9 +2724,6 @@ func (a *StrikeElem) coreReactElement() {}
 
 // StrikeProps defines the properties for the <s> element
 type StrikeProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3152,9 +2741,6 @@ type StrikeProps struct {
 func Strike(props *StrikeProps, children ...Element) *StrikeElem {
 	type _StrikeProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3171,12 +2757,6 @@ func Strike(props *StrikeProps, children ...Element) *StrikeElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3222,9 +2802,6 @@ func (a *SupElem) coreReactElement() {}
 
 // SupProps defines the properties for the <sup> element
 type SupProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3242,9 +2819,6 @@ type SupProps struct {
 func Sup(props *SupProps, children ...Element) *SupElem {
 	type _SupProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3261,12 +2835,6 @@ func Sup(props *SupProps, children ...Element) *SupElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3312,9 +2880,6 @@ func (a *SvgElem) coreReactElement() {}
 
 // SvgProps defines the properties for the <svg> element
 type SvgProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3335,9 +2900,6 @@ type SvgProps struct {
 func Svg(props *SvgProps, children ...Element) *SvgElem {
 	type _SvgProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3357,12 +2919,6 @@ func Svg(props *SvgProps, children ...Element) *SvgElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3413,9 +2969,6 @@ func (a *TableElem) coreReactElement() {}
 
 // TableProps defines the properties for the <table> element
 type TableProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3433,9 +2986,6 @@ type TableProps struct {
 func Table(props *TableProps, children ...Element) *TableElem {
 	type _TableProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3452,12 +3002,6 @@ func Table(props *TableProps, children ...Element) *TableElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3503,9 +3047,6 @@ func (a *TbodyElem) coreReactElement() {}
 
 // TbodyProps defines the properties for the <tbody> element
 type TbodyProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3523,9 +3064,6 @@ type TbodyProps struct {
 func Tbody(props *TbodyProps, children ...Element) *TbodyElem {
 	type _TbodyProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3542,12 +3080,6 @@ func Tbody(props *TbodyProps, children ...Element) *TbodyElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3593,9 +3125,6 @@ func (a *TdElem) coreReactElement() {}
 
 // TdProps defines the properties for the <td> element
 type TdProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3613,9 +3142,6 @@ type TdProps struct {
 func Td(props *TdProps, children ...Element) *TdElem {
 	type _TdProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3632,12 +3158,6 @@ func Td(props *TdProps, children ...Element) *TdElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3683,9 +3203,6 @@ func (a *TextAreaElem) coreReactElement() {}
 
 // TextAreaProps defines the properties for the <textarea> element
 type TextAreaProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3705,9 +3222,6 @@ type TextAreaProps struct {
 func TextArea(props *TextAreaProps, children ...Element) *TextAreaElem {
 	type _TextAreaProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3726,12 +3240,6 @@ func TextArea(props *TextAreaProps, children ...Element) *TextAreaElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3780,9 +3288,6 @@ func (a *ThElem) coreReactElement() {}
 
 // ThProps defines the properties for the <th> element
 type ThProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3800,9 +3305,6 @@ type ThProps struct {
 func Th(props *ThProps, children ...Element) *ThElem {
 	type _ThProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3819,12 +3321,6 @@ func Th(props *ThProps, children ...Element) *ThElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3870,9 +3366,6 @@ func (a *TheadElem) coreReactElement() {}
 
 // TheadProps defines the properties for the <thead> element
 type TheadProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3890,9 +3383,6 @@ type TheadProps struct {
 func Thead(props *TheadProps, children ...Element) *TheadElem {
 	type _TheadProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3909,12 +3399,6 @@ func Thead(props *TheadProps, children ...Element) *TheadElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -3960,9 +3444,6 @@ func (a *TrElem) coreReactElement() {}
 
 // TrProps defines the properties for the <tr> element
 type TrProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -3980,9 +3461,6 @@ type TrProps struct {
 func Tr(props *TrProps, children ...Element) *TrElem {
 	type _TrProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -3999,12 +3477,6 @@ func Tr(props *TrProps, children ...Element) *TrElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -4050,9 +3522,6 @@ func (a *UlElem) coreReactElement() {}
 
 // UlProps defines the properties for the <ul> element
 type UlProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -4070,9 +3539,6 @@ type UlProps struct {
 func Ul(props *UlProps, children ...RendersLi) *UlElem {
 	type _UlProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -4094,12 +3560,6 @@ func Ul(props *UlProps, children ...RendersLi) *UlElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML
@@ -4145,9 +3605,6 @@ func (a *UseElem) coreReactElement() {}
 
 // UseProps defines the properties for the <use> element
 type UseProps struct {
-	AriaExpanded            bool
-	AriaHasPopup            bool
-	AriaLabelledBy          string
 	ClassName               string
 	DangerouslySetInnerHTML *DangerousInnerHTML
 	DataSet                 DataSet
@@ -4166,9 +3623,6 @@ type UseProps struct {
 func Use(props *UseProps, children ...Element) *UseElem {
 	type _UseProps struct {
 		o                       *js.Object
-		AriaExpanded            bool                `js:"aria-expanded"`
-		AriaHasPopup            bool                `js:"aria-haspopup"`
-		AriaLabelledBy          string              `js:"aria-labelledby"`
 		ClassName               string              `js:"className"`
 		DangerouslySetInnerHTML *DangerousInnerHTML `js:"dangerouslySetInnerHTML"`
 		ID                      string              `js:"id" react:"omitempty"`
@@ -4186,12 +3640,6 @@ func Use(props *UseProps, children ...Element) *UseElem {
 	}
 
 	if props != nil {
-		rprops.AriaExpanded = props.AriaExpanded
-
-		rprops.AriaHasPopup = props.AriaHasPopup
-
-		rprops.AriaLabelledBy = props.AriaLabelledBy
-
 		rprops.ClassName = props.ClassName
 
 		rprops.DangerouslySetInnerHTML = props.DangerouslySetInnerHTML

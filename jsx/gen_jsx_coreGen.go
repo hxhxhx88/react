@@ -178,15 +178,6 @@ func parseA(n *html.Node) *react.AElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -244,15 +235,6 @@ func parseAbbr(n *html.Node) *react.AbbrElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -300,15 +282,6 @@ func parseArticle(n *html.Node) *react.ArticleElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -358,15 +331,6 @@ func parseAside(n *html.Node) *react.AsideElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -414,15 +378,6 @@ func parseB(n *html.Node) *react.BElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -472,15 +427,6 @@ func parseBr(n *html.Node) *react.BrElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -528,15 +474,6 @@ func parseButton(n *html.Node) *react.ButtonElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -589,15 +526,6 @@ func parseCaption(n *html.Node) *react.CaptionElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -645,15 +573,6 @@ func parseCode(n *html.Node) *react.CodeElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -703,15 +622,6 @@ func parseDiv(n *html.Node) *react.DivElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -759,15 +669,6 @@ func parseEm(n *html.Node) *react.EmElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -817,15 +718,6 @@ func parseFooter(n *html.Node) *react.FooterElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -873,15 +765,6 @@ func parseForm(n *html.Node) *react.FormElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -931,15 +814,6 @@ func parseH1(n *html.Node) *react.H1Elem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -987,15 +861,6 @@ func parseH2(n *html.Node) *react.H2Elem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -1045,15 +910,6 @@ func parseH3(n *html.Node) *react.H3Elem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -1101,15 +957,6 @@ func parseH4(n *html.Node) *react.H4Elem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -1159,15 +1006,6 @@ func parseH5(n *html.Node) *react.H5Elem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -1215,15 +1053,6 @@ func parseH6(n *html.Node) *react.H6Elem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -1273,15 +1102,6 @@ func parseHeader(n *html.Node) *react.HeaderElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -1328,15 +1148,6 @@ func parseHr(n *html.Node) *react.HrElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -1380,15 +1191,6 @@ func parseI(n *html.Node) *react.IElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -1437,15 +1239,6 @@ func parseIFrame(n *html.Node) *react.IFrameElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -1501,15 +1294,6 @@ func parseImg(n *html.Node) *react.ImgElem {
 			case v == "alt":
 				vp.Alt = a.Val
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -1560,15 +1344,6 @@ func parseInput(n *html.Node) *react.InputElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -1627,15 +1402,6 @@ func parseLabel(n *html.Node) *react.LabelElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -1687,15 +1453,6 @@ func parseLi(n *html.Node) *react.LiElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -1743,15 +1500,6 @@ func parseMain(n *html.Node) *react.MainElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -1801,15 +1549,6 @@ func parseNav(n *html.Node) *react.NavElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -1857,15 +1596,6 @@ func parseOption(n *html.Node) *react.OptionElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -1918,15 +1648,6 @@ func parseP(n *html.Node) *react.PElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -1975,15 +1696,6 @@ func parsePre(n *html.Node) *react.PreElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -2031,15 +1743,6 @@ func parseSelect(n *html.Node) *react.SelectElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -2092,15 +1795,6 @@ func parseSpan(n *html.Node) *react.SpanElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -2148,15 +1842,6 @@ func parseStrike(n *html.Node) *react.StrikeElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -2206,15 +1891,6 @@ func parseSup(n *html.Node) *react.SupElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -2262,15 +1938,6 @@ func parseSvg(n *html.Node) *react.SvgElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -2329,15 +1996,6 @@ func parseTable(n *html.Node) *react.TableElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -2385,15 +2043,6 @@ func parseTbody(n *html.Node) *react.TbodyElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -2443,15 +2092,6 @@ func parseTd(n *html.Node) *react.TdElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -2499,15 +2139,6 @@ func parseTextArea(n *html.Node) *react.TextAreaElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -2563,15 +2194,6 @@ func parseTh(n *html.Node) *react.ThElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -2619,15 +2241,6 @@ func parseThead(n *html.Node) *react.TheadElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val
@@ -2677,15 +2290,6 @@ func parseTr(n *html.Node) *react.TrElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -2734,15 +2338,6 @@ func parseUl(n *html.Node) *react.UlElem {
 		for _, a := range n.Attr {
 			switch v := a.Key; {
 
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
-
 			case v == "class":
 				vp.ClassName = a.Val
 
@@ -2790,15 +2385,6 @@ func parseUse(n *html.Node) *react.UseElem {
 
 		for _, a := range n.Attr {
 			switch v := a.Key; {
-
-			case v == "aria-expanded":
-				vp.AriaExpanded = parseBool(a.Val)
-
-			case v == "aria-haspopup":
-				vp.AriaHasPopup = parseBool(a.Val)
-
-			case v == "aria-labelledby":
-				vp.AriaLabelledBy = a.Val
 
 			case v == "class":
 				vp.ClassName = a.Val

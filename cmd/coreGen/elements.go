@@ -168,9 +168,9 @@ func (a *Attr) HTMLConvertor(s string) string {
 // templates are the attribute templates to which elements can refer
 var templates = map[string]map[string]*Attr{
 	"html": {
-		"AriaHasPopup":            &Attr{React: "aria-haspopup", Type: "bool", HTML: "aria-haspopup"},
-		"AriaExpanded":            &Attr{React: "aria-expanded", Type: "bool", HTML: "aria-expanded"},
-		"AriaLabelledBy":          &Attr{React: "aria-labelledby", HTML: "aria-labelledby"},
+		// "AriaHasPopup":            &Attr{React: "aria-haspopup", Type: "bool", HTML: "aria-haspopup"},
+		// "AriaExpanded":            &Attr{React: "aria-expanded", Type: "bool", HTML: "aria-expanded"},
+		// "AriaLabelledBy":          &Attr{React: "aria-labelledby", HTML: "aria-labelledby"},
 		"ClassName":               &Attr{HTML: "class"},
 		"DangerouslySetInnerHTML": &Attr{Type: "*DangerousInnerHTML", NoHTML: true},
 		"DataSet":                 &Attr{Type: "DataSet", NoReact: true},
